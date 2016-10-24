@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		ED02CF731DBA1E0C0066330D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED02CF721DBA1E0C0066330D /* main.m */; };
 		ED02CF761DBA1E0C0066330D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED02CF751DBA1E0C0066330D /* AppDelegate.m */; };
-		ED02CF791DBA1E0C0066330D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED02CF781DBA1E0C0066330D /* ViewController.m */; };
+		ED02CF791DBA1E0C0066330D /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED02CF781DBA1E0C0066330D /* TestViewController.m */; };
 		ED02CF7C1DBA1E0C0066330D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED02CF7A1DBA1E0C0066330D /* Main.storyboard */; };
 		ED02CF7E1DBA1E0C0066330D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED02CF7D1DBA1E0C0066330D /* Assets.xcassets */; };
 		ED02CF811DBA1E0C0066330D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED02CF7F1DBA1E0C0066330D /* LaunchScreen.storyboard */; };
 		ED02CF8C1DBA1E0C0066330D /* OC_TestbedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED02CF8B1DBA1E0C0066330D /* OC_TestbedTests.m */; };
+		ED02CF981DBA20C40066330D /* CapitalizeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ED02CF971DBA20C40066330D /* CapitalizeManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,8 +32,8 @@
 		ED02CF721DBA1E0C0066330D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ED02CF741DBA1E0C0066330D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ED02CF751DBA1E0C0066330D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		ED02CF771DBA1E0C0066330D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		ED02CF781DBA1E0C0066330D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		ED02CF771DBA1E0C0066330D /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		ED02CF781DBA1E0C0066330D /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		ED02CF7B1DBA1E0C0066330D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED02CF7D1DBA1E0C0066330D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED02CF801DBA1E0C0066330D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +41,8 @@
 		ED02CF871DBA1E0C0066330D /* OC-TestbedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OC-TestbedTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED02CF8B1DBA1E0C0066330D /* OC_TestbedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OC_TestbedTests.m; sourceTree = "<group>"; };
 		ED02CF8D1DBA1E0C0066330D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED02CF961DBA20C40066330D /* CapitalizeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CapitalizeManager.h; sourceTree = "<group>"; };
+		ED02CF971DBA20C40066330D /* CapitalizeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CapitalizeManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,13 +86,15 @@
 			children = (
 				ED02CF741DBA1E0C0066330D /* AppDelegate.h */,
 				ED02CF751DBA1E0C0066330D /* AppDelegate.m */,
-				ED02CF771DBA1E0C0066330D /* ViewController.h */,
-				ED02CF781DBA1E0C0066330D /* ViewController.m */,
+				ED02CF771DBA1E0C0066330D /* TestViewController.h */,
+				ED02CF781DBA1E0C0066330D /* TestViewController.m */,
 				ED02CF7A1DBA1E0C0066330D /* Main.storyboard */,
 				ED02CF7D1DBA1E0C0066330D /* Assets.xcassets */,
 				ED02CF7F1DBA1E0C0066330D /* LaunchScreen.storyboard */,
 				ED02CF821DBA1E0C0066330D /* Info.plist */,
 				ED02CF711DBA1E0C0066330D /* Supporting Files */,
+				ED02CF961DBA20C40066330D /* CapitalizeManager.h */,
+				ED02CF971DBA20C40066330D /* CapitalizeManager.m */,
 			);
 			path = "OC-Testbed";
 			sourceTree = "<group>";
@@ -215,9 +220,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED02CF791DBA1E0C0066330D /* ViewController.m in Sources */,
+				ED02CF791DBA1E0C0066330D /* TestViewController.m in Sources */,
 				ED02CF761DBA1E0C0066330D /* AppDelegate.m in Sources */,
 				ED02CF731DBA1E0C0066330D /* main.m in Sources */,
+				ED02CF981DBA20C40066330D /* CapitalizeManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
