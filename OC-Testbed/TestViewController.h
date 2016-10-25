@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <UserNotifications/UserNotifications.h>
+#import "CapitalizeManager.h"
 
 @interface TestViewController : UIViewController
 
