@@ -1,4 +1,5 @@
 def standard_pods
+  pod 'Onboard'
 end
 
 target 'OC-Testbed' do

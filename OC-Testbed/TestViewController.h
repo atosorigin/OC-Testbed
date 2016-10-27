@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "OnboardingViewController.h"
 @interface TestViewController : UIViewController
 
 

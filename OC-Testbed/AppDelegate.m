@@ -17,6 +17,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.window.rootViewController = [self setupOnboardingVC];
+
     return YES;
 }
 
@@ -47,5 +50,23 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+-(OnboardingViewController*) setupOnboardingVC {
+    OnboardingContentViewController *firstPage = [OnboardingContentViewController contentWithTitle:@"Test Onboarding" body:@"Page body goes here." image:[UIImage imageNamed:@"TestIcon"] buttonText:@"Test Button" action:^{
+        // do something here when users press the button, like ask for location services permissions, register for push notifications, connect to social media, or finish the onboarding process
+        NSLog(@"Button pressed");
+        
+    }];
+    
+    OnboardingContentViewController *secondPage = [OnboardingContentViewController contentWithTitle:@"Second Page" body:@"Page body goes here." image:[UIImage imageNamed:@"TestIcon"] buttonText:nil action:nil];
+    
+    OnboardingContentViewController *thirdPage = [OnboardingContentViewController contentWithTitle:@"Last Page" body:@"Page body goes here." image:[UIImage imageNamed:@"TestIcon"] buttonText:@"Done" action:^{
+        // do something here when users press the button, like ask for location services permissions, register for push notifications, connect to social media, or finish the onboarding process
+        NSLog(@"Button pressed");
+        
+    }];
+    
+    // Image
+    return [OnboardingViewController onboardWithBackgroundImage:[UIImage imageNamed:@"background"] contents:@[firstPage, secondPage, thirdPage]];
+}
 
 @end
